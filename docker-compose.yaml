@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    build: demo:${BUILD_NUMBER} .
+    build: redis:alpine:${BUILD_NUMBER} .
     ports:
       - "5000:5000"
   redis:
