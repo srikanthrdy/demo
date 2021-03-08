@@ -3,7 +3,7 @@ services:
   web:
   baggins.api.rest:
     image: my.image.name:rc2
-    build:
+    build: .
       context: ../..
       dockerfile: ./Dockerfile
     ports:
