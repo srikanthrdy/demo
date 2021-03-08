@@ -1,9 +1,10 @@
 version: "3.9"
 services:
   web:
-    build: ${BUILD_NUMBER} .
+    image: "demo:${TAG}"
+    build: .
     ports:
-      - "5000:5000"
+      - "5012:5000"
   redis:
     image: "redis:alpine"
 
