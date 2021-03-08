@@ -1,9 +1,13 @@
 version: "3.9"
 services:
   web:
-    build: .
+  baggins.api.rest:
+    image: my.image.name:rc2
+    build:
+      context: ../..
+      dockerfile: ./Dockerfile
     ports:
       - "5000:5000"
   redis:
-    image: "redis:alpine:${BUILD_NUMBER}"
+    image: "redis:alpine"
 
