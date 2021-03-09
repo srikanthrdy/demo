@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    image: "localhost:8089/optima/credit:${TAG}"
+    image: "localhost:1122/demo:${TAG}"
     build: .
     ports:
       - "5012:5000"
