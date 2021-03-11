@@ -4,7 +4,7 @@ services:
     image: "demo:${TAG}"
     build: .
     ports:
-      - "5012:5000"
+      - "5013:5000"
   redis:
     image: "redis:alpine"
 
